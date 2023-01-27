@@ -28,4 +28,10 @@ function myFunction() {
       navbar.style.backgroundColor = 'transparent'; // Change the navbar's background color to transparent
     }
   }
+
   
+$('.img-hover-text').hover(function () {
+  $(this).find('.img-hover-text-content').fadeIn();
+}, function () {
+  $(this).find('.img-hover-text-content').fadeOut();
+});
